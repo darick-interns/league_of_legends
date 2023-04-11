@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./showAbilities.js" defer></script>
+    <script src="./showChampInfo.js" defer></script>
     <title>Document</title>
     <style>
         #champ{
@@ -21,7 +21,7 @@
             padding-bottom: 10px;
         }
 
-        .heroImage{
+        .heroImage, .champAbility{
             height: 320px;
             width: 237px;
             object-fit:cover;
@@ -29,35 +29,44 @@
             padding: 8px;
         }
 
-        .heroes{
+        .champions, .champAbilities{
             cursor: pointer;
             display: block;
             margin-right: auto;
-            margin-left:auto;
-            width: 87%;    
+            margin-left:7%;
+            padding: 8px;width: 87%;    
         }
+
+        #styleName{
+            font-style: italic;
+            font-weight:bolder;
+            font-size: 20px;
+            display: table;
+            padding-top: 10px;
+            margin-left: 7%;
+        }
+
+        #styleDesc{
+            display: table;
+            padding-top: 10px;
+            margin-left: 7%;
+            /* font-size: ; */
+        }
+
         
     </style>
 </head>
 <body>
     <header>
-        <div class = "text">
-            <span id = "champ">CHAMPIONS</span><span id = "LoL">League Of Legends</span>
+        <div class="text">
+            <span id="champ">CHAMPIONS</span><span id = "LoL">League Of Legends</span>
         </div>
     </header>
-    <div class = "heroes">
-        <img class = "heroImage" src = "images/Aatrox_0.jpg">
-        <img class = "heroImage" src = "images/Leblanc_0.jpg">
-        <img class = "heroImage" src = "images/Riven_0.jpg">
-        <img class = "heroImage" src = "images/Akali_0.jpg">
-        <img class = "heroImage" src = "images/Gangplank_0.jpg">
+    <div class="champions"></div>
+    
+    <div class = "champAbilities"></div>
+    
+    <span id = "container"></span>
 
-        <!-- <button id = "btn">save</button> -->
-        <!--<img class = "heroImage" src = "images/Aatrox_0.jpg">
-        <img class = "heroImage" src = "images/Leblanc_0.jpg">
-        <img class = "heroImage" src = "images/Riven_0.jpg">
-        <img class = "heroImage" src = "images/Aatrox_0.jpg">
-        <img class = "heroImage" src = "images/Aatrox_0.jpg">-->
-    </div> 
 </body>
 </html>
